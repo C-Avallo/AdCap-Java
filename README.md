@@ -4,5 +4,6 @@ An easy way to automate Adventure Capitalist with Java. Uses simple implementati
 Suggested Use: After resurrection
 
 
-<img width="1146" alt="example" src="https://user-images.githubusercontent.com/33200183/32145551-01c62c7e-bca1-11e7-8632-f7cb25cb8b2a.png">
+<img width="1146" alt="capture" src="https://user-images.githubusercontent.com/33200183/32145655-d53e498c-bca2-11e7-9e10-5cdd95f57184.png">
+
 
