@@ -1,5 +1,5 @@
 # AdCap-Java
-An easy way to automate AdCap with Java. Uses simple implementation of Java robot in conjunction with screenshot utils to auto collect over hours or days. 
+An easy way to automate Adventure Capitalist with Java. Uses simple implementation of Java Robot in conjunction with screenshot utils to auto collect over hours or days. 
 
 Suggested Use: After resurrection
 
