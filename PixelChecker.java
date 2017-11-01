@@ -38,6 +38,10 @@ public class PixelChecker {
     private final int[] hockey = {860, 300};
     private final int[] movie = {860, 400};
 
+    public int[][] stuff = {rig, bank, lemon, news, car, pizza, doughnut, shrimp, hockey, movie};
+    public String[] stuff_str = {"rig", "bank", "lemon", "news", "car", "pizza", "doughnut", "shrimp", "hockey", "movie"};
+
+    
     public static void main(String args[]) throws AWTException, InterruptedException, IOException {
 
         System.out.println("Loading Assets...");
@@ -76,9 +80,7 @@ public class PixelChecker {
 
     public void checkForStuff() {
 
-        int[][] stuff = {rig, bank, lemon, news, car, pizza, doughnut, shrimp, hockey, movie};
-        String[] stuff_str = {"rig", "bank", "lemon", "news", "car", "pizza", "doughnut", "shrimp", "hockey", "movie"};
-
+       
         for (int i = 0; i < stuff.length; i++) {
 
             Color checkColor = robot.getPixelColor(stuff[i][0], stuff[i][1]);
@@ -116,6 +118,22 @@ public class PixelChecker {
 
         robot.mouseMove(Cx, Cy);
 
+    }
+    public void click(int j){
+        
+        Color checkColor = robot.getPixelColor(stuff[j][0], stuff[j][1]);
+        
+        if (checkColor.getRed() == redBuyable && checkColor.getBlue() == blueBuyable) {
+
+                robot.mouseMove(stuff[j][0], stuff[j][1]);
+                robot.delay(20);
+                leftClick();
+                robot.delay(20);
+                leftClick();
+
+                System.out.println("CLICKED ON: " + stuff_str[j].toUpperCase());
+        }
+        
     }
 }
 
